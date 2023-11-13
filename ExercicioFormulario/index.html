@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<style>
+    body {
+        background-color: #000; /* Fundo preto */
+        color: #fff; /* Texto branco */
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+    
+    .container {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .cadastro-form {
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .titulo-campo {
+        color: red; /* Títulos em vermelho */
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .campo-obrigatorio {
+        color: red;
+    }
+    
+    input {
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid black; /* Borda preta por padrão */
+    }
+    
+    input[type="email"] {
+        border: 1px solid yellow; /* Borda amarela para campos de e-mail */
+    }
+    
+    input:required:valid {
+        border: 1px solid black; /* Borda preta quando o campo obrigatório é preenchido corretamente */
+    }
+    
+    input:required:invalid {
+        border: 1px solid red; /* Borda vermelha quando o campo obrigatório não é preenchido corretamente */
+    }
+    
+    button {
+        padding: 10px;
+        background-color: #333; /* Cor de fundo do botão */
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #555; /* Cor diferente ao passar o mouse sobre o botão */
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <form class="cadastro-form">
+            <label for="nome" class="titulo-campo">Nome<span class="campo-obrigatorio">*</span></label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="data-nascimento" class="titulo-campo">Data de Nascimento<span class="campo-obrigatorio">*</span></label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+            <label for="telefone" class="titulo-campo">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="email" class="titulo-campo">Email<span class="campo-obrigatorio">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
