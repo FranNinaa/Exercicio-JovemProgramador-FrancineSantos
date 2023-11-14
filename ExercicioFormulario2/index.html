@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/formulario-de-contato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/styleFormulario2.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+<form class="formulario" id="IdForm" method="post">
+    <h1>Formulário de Cadastro</h1>
+    <label for="deliveryDate">Data de Entrega:</label>
+    <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="IdName" name="nome" required maxlength="30">
+
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" name="cep" required>
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="IdCidade" name="cidade" required>
+
+    <label for="estados">Estado:</label>
+    <select id="IdEstados" name="estados" required>
+        <option value=""  selected>Selecione um estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select>
+
+    <label for="observacao">Observação:</label>
+    <textarea id="IdObservacao" name="observacao" maxlength="1000"></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
